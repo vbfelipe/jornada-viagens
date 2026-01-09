@@ -1,4 +1,4 @@
-.main-header {
+header {
     background-color: var(--background-tertiary-color);
     display: flex;
     flex-direction: row;
@@ -82,7 +82,7 @@ nav {
 }
 
 @media (min-width: 1024px) {
-    .main-header {
+    header {
         padding: 38px 120px;
     }
 
