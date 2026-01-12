@@ -1,0 +1,59 @@
+.payments .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: 460px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.payments .content-container .image-gallery .image.first {
+    background: url(../img/bag-grid.png) no-repeat;
+    background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.second {
+    background: url(../img/passport-grid.png) no-repeat;
+    background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.thirdy {
+    background: url(../img/bridge-grid.png) no-repeat;
+    background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.colspan-2 {
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .payments .content-container .image-gallery .image.first {
+        background: url(../img/bag-grid-tablet.png) no-repeat;
+        background-size: cover;
+    }
+
+    .payments .content-container .image-gallery .image.second {
+        background: url(../img/passport-grid-tablet.png) no-repeat;
+        background-size: cover;
+    }
+
+    .payments .content-container .image-gallery .image.thirdy {
+        background: url(../img/bridge-grid-tablet.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .payments .content-container {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .payments .content-container .text-content {
+        width: 360px;
+    }
+
+    .payments .content-container .image-gallery {
+        width: 790px;
+    }
+}
