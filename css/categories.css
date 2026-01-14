@@ -34,6 +34,11 @@
         width: 100%;
     }
 
+    .categories-cards .card {
+        flex: 1 1 calc(50% - 24px);
+        max-width: 312px;
+    }
+
     .categories-cards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -41,15 +46,15 @@
     }
 }
 
-/* trick para tablet */
 @media screen and (min-width: 1024px) {
-    .categories-card .card {
-        width: 430px;
+    .categories-cards .card {
+        flex: 1 1 calc(25% - 24px);
+        max-width: 280px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .categories-card .card {
+    .categories-cards .card {
         width: 280px;
     }
 }
