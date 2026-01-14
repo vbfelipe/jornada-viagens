@@ -44,7 +44,7 @@ body {
 }
 
 section {
-    width: 312px;
+
     margin: 0 auto 88px;
 }
 
@@ -87,7 +87,7 @@ section.hero {
 
 .button {
     width: 280px;
-    height: 64;
+    height: 64px;
     color: var(--text-secondary-color);
     font-weight: var(--title-weight);
     font-size: 20px;
@@ -96,6 +96,12 @@ section.hero {
     display: inline-block;
     text-decoration: none;
     line-height: 64px;
+}
+
+/* default content padding for all sections */
+section:not(.hero):not(.bottom-hero) {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media screen and (min-width:768px) {
@@ -111,6 +117,11 @@ section.hero {
     .section-title h2 {
         font-size: 32px;
     }
+
+    section:not(.hero):not(.bottom-hero) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -120,6 +131,11 @@ section.hero {
 
     .button:hover {
         background-color: var(--primary-color);
+    }
+
+    section:not(.hero):not(.bottom-hero) {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
