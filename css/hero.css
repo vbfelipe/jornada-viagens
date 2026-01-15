@@ -1,11 +1,11 @@
+/* BASE (MOBILE FIRST) */
 section.hero,
 section.bottom-hero {
     width: 100%;
     margin: 0;
 }
 
-.hero .hero-img,
-.bottom-hero .hero-img {
+.hero-img {
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -13,130 +13,86 @@ section.bottom-hero {
     background-size: cover;
 }
 
-.hero .hero-img {
-    background-image: url(../img/hero-mobile.jpg);
-}
-
-.bottom-hero .hero-img {
-    background-image: url(../img/bottom-hero-mobile.jpg);
-}
-
-.hero h2 {
-    padding: 88px 24px;
-    margin: 0;
-    font-weight: var(--text-weight);
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
-}
-
-@media screen and (min-width: 768px) {
-    .hero .hero-img {
-        height: 620px;
-        background-image: url(../img/hero-tablet.jpg);
-    }
-
-    .bottom-hero .hero-img {
-        height: 400px;
-        background-image: url(../img/bottom-hero-tablet.jpg);
-    }
-
-    .hero h2 {
-        padding: 88px 60px;
-        font-size: 32px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .hero .hero-img {
-        background-image: url(../img/hero-desktop.jpg);
-    }
-
-    .bottom-hero .hero-img {
-        height: 600px;
-        background-image: url(../img/bottom-hero-desktop.jpg);
-    }
-
-    .hero h2 {
-        padding: 88px 120px;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .hero h2 {
-        padding: 88px 160px;
-    }
-}
-
-/* ----------------------------- 
-PACOTES DE VIAGENS - HERO 
--------------------------------- */
-section.hero,
-section.bottom-hero {
-    width: 100%;
-    margin: 0;
-}
-
-.hero .hero-japao,
-.bottom-hero .hero-japao {
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.hero .hero-japao {
+.travel-packages.hero .hero-img {
     background-image: url(../img/hero-japao.jpg);
+    margin-bottom: 88px;
 }
 
-.bottom-hero .hero-japao {
+.travel-packages.bottom-hero .hero-img {
     background-image: url(../img/hero-japao-2.png);
 }
 
-.hero h2 {
-    padding: 88px 24px;
-    margin: 0;
+.travel-packages .hero-content {
+    padding: 80px 24px;
+    margin: 0 auto;
+}
+
+.travel-packages .hero-content h1 {
+    font-size: 32px;
+    color: var(--text-secondary-color);
+}
+
+.travel-packages .hero-content hr {
+    width: 120px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 16px 0 24px;
+}
+
+.travel-packages .hero-content p {
+    width: 100%;
+    font-size: 16px;
+    color: var(--text-secondary-color);
     font-weight: var(--text-weight);
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
+    line-height: 26px;
 }
 
+/* TABLET */
 @media screen and (min-width: 768px) {
-    .hero .hero-japao {
+    .travel-packages.hero .hero-img {
         height: 620px;
-        background-image: url(../img/hero-japao.jpg);
     }
 
-    .bottom-hero .hero-japao {
+    .travel-packages.bottom-hero .hero-img {
         height: 400px;
-        background-image: url(../img/hero-japao-2.png);
     }
 
-    .hero h2 {
-        padding: 88px 60px;
-        font-size: 32px;
+    .travel-packages .hero-content {
+        padding: 120px 60px;
+    }
+
+    .travel-packages .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .travel-packages .hero-content p {
+        max-width: 570px;
+        font-size: 18px;
     }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
-    .hero .hero-japao {
-        background-image: url(../img/hero-japao.jpg);
+    .travel-packages.hero .hero-img {
+        margin-bottom: 104px;
     }
 
-    .bottom-hero .hero-japao {
-        height: 600px;
-        background-image: url(../img/hero-japao-2.png);
+    .travel-packages.bottom-hero .hero-img {
+        height: 400px;
     }
 
-    .hero h2 {
-        padding: 88px 120px;
+    .travel-packages .hero-content {
+        padding: 150px 120px 170px;
+    }
+
+    .travel-packages .hero-content h1 {
+        font-size: 48px;
     }
 }
 
-@media screen and (min-width: 1920px) {
-    .hero h2 {
-        padding: 88px 160px;
+@media screen and (min-width: 1440px) {
+    .travel-packages .hero-content {
+        width: 1200px;
     }
 }
