@@ -1,11 +1,11 @@
-/* BASE (MOBILE FIRST) */
 section.hero,
 section.bottom-hero {
     width: 100%;
     margin: 0;
 }
 
-.hero-img {
+.hero .hero-img,
+.bottom-hero .hero-img {
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -13,17 +13,39 @@ section.bottom-hero {
     background-size: cover;
 }
 
+/* Mobile default images (index) */
+.hero .hero-img {
+    background-image: url(../img/hero-mobile.jpg);
+}
+
+.bottom-hero .hero-img {
+    background-image: url(../img/bottom-hero-mobile.jpg);
+}
+
+.hero h2 {
+    padding: 88px 24px;
+    margin: 0;
+    font-weight: var(--text-weight);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.travel-packages.hero {
+    margin-bottom: 88px;
+}
+
 .travel-packages.hero .hero-img {
     background-image: url(../img/hero-japao.jpg);
-    margin-bottom: 88px;
 }
 
 .travel-packages.bottom-hero .hero-img {
     background-image: url(../img/hero-japao-2.png);
+    height: 360px;
 }
 
 .travel-packages .hero-content {
-    padding: 80px 24px;
+    padding: 72px 24px;
     margin: 0 auto;
 }
 
@@ -48,8 +70,25 @@ section.bottom-hero {
     line-height: 26px;
 }
 
-/* TABLET */
 @media screen and (min-width: 768px) {
+
+    /* Index hero */
+    .hero .hero-img {
+        height: 620px;
+        background-image: url(../img/hero-tablet.jpg);
+    }
+
+    .bottom-hero .hero-img {
+        height: 400px;
+        background-image: url(../img/bottom-hero-tablet.jpg);
+    }
+
+    .hero h2 {
+        padding: 88px 60px;
+        font-size: 32px;
+    }
+
+    /* Travel packages */
     .travel-packages.hero .hero-img {
         height: 620px;
     }
@@ -72,16 +111,23 @@ section.bottom-hero {
     }
 }
 
-/* DESKTOP */
 @media screen and (min-width: 1024px) {
-    .travel-packages.hero .hero-img {
-        margin-bottom: 104px;
+
+    /* Index hero */
+    .hero .hero-img {
+        background-image: url(../img/hero-desktop.jpg);
     }
 
-    .travel-packages.bottom-hero .hero-img {
-        height: 400px;
+    .bottom-hero .hero-img {
+        height: 600px;
+        background-image: url(../img/bottom-hero-desktop.jpg);
     }
 
+    .hero h2 {
+        padding: 88px 120px;
+    }
+
+    /* Travel packages */
     .travel-packages .hero-content {
         padding: 150px 120px 170px;
     }
@@ -95,4 +141,17 @@ section.bottom-hero {
     .travel-packages .hero-content {
         width: 1200px;
     }
+}
+
+@media screen and (min-width: 1920px) {
+    .hero h2 {
+        padding: 88px 160px;
+    }
+}
+
+.list-links li a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    font-weight: var(--menu-text-weight);
+    font-size: 24px;
 }
